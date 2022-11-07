@@ -1,0 +1,3 @@
+This file is a youtube to MP3 conveter. 
+It will take the supplied youtube link and download an mp4 file using pytube.
+Once the file is downlaoded moviepy will take the mp4 file from your chosen directory and convert it into an mp3 file
