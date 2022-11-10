@@ -6,12 +6,21 @@
 #Importing the necessary modules.
 import tkinter as tk
 from tkinter.filedialog import askdirectory
-from moviepy.editor import *
+from moviepy.editor import VideoFileClip
 from pytube import YouTube
 import os
+from PIL import Image, ImageTk
 
 #creating a canvas to run the program on
 root= tk.Tk()
+
+#Creating the title for the window
+root.title('Youtube to MP3 Converter')
+
+#Creating an image icon for the upper corner
+ico = Image.open('convert-icon.jpg')
+photo = ImageTk.PhotoImage(ico)
+root.wm_iconphoto(False, photo)
 
 #This will create the canvas size and display it to the user
 canvas1 = tk.Canvas(root, width=500, height=500)
